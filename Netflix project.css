@@ -1,0 +1,752 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    min-width: 100vw;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(header-image.png);
+    background-size: cover;
+    position: relative;
+}
+
+.navlogo {
+    width: 100vw;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    height: 3rem;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 100%;
+    width: 10rem;
+    margin-right: 4rem;
+    /* margin-right: auto; */
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    /* margin: auto; */
+}
+
+#button1 {
+    height: 80%;
+    width: 7rem;
+    font-size: 0.9rem;
+    border: 0.8px solid rgba(255, 255, 255, 0.284);
+    background-color: transparent;
+    margin-right: 2rem;
+    margin-left: auto;
+}
+
+#button1 i {
+    height: 0.4rem;
+    width: 0.5rem;
+    margin-right: 0.6rem;
+}
+#button2 {
+    height: 85%;
+    width: 5.5rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-radius: 8px;
+    background-color: rgba(255, 0, 0, 0.742);
+}
+
+#button2:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+/** HERO SECTION **/
+
+.text {
+    height: 82.8vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box {
+    height: 14rem;
+    width: 90%;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+#h1 {
+    font-size: 5.4vw;
+    text-align: center;
+}
+
+.box p {
+    font-size: 2.2vw;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.line {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line h3 {
+    text-align: center;
+}
+
+.input {
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input input {
+    height: 98%;
+    width: 30vw;
+    border: 0.8px solid rgba(255, 255, 255, 0.284);
+    background-color: rgba(0, 0, 0, 0.548);
+    margin-right: 0.8rem;
+    border-radius: 4px;
+}
+
+input::placeholder {
+    color: white;
+    padding: 0.8rem;
+}
+
+.input button {
+    height: 100%;
+    width: 18vw;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid red;
+    background-color: red;
+    overflow: hidden;
+}
+
+.input button i {
+    height: 1.5rem;
+    width: 1.5rem;
+    margin-left: 0.2rem;
+}
+
+@media (max-width:860px) {
+    .input button i {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    
+    .box {
+        margin-top: 1rem;
+        height: 80vh;
+        width: 90%;
+    }
+    .text {
+        margin-top: 5vh;
+    }
+    #h1 {
+        font-size: 2.2rem;
+    }
+    .box p {
+        font-size: 1.5rem;
+    }
+
+    .line {
+        height: 16vh;
+    }
+    .line h3 {
+        margin-top: 3rem;
+        font-size: 1.2rem;
+        line-height: 1.8;
+        align-self: center;
+    }
+    .input {
+        height: 20vh;
+        margin-top: 3rem;
+        flex-direction: column;
+    }
+    .input input {
+        height: 25vh;
+        width: 70vw;
+    }
+    .input button {
+        margin-top: 1.5rem;
+        height: 25vh;
+        width: 42vw;
+    }
+}
+
+@media (max-width:425px) {
+    #deepak {
+        display: none;
+    }
+}
+
+@media (max-width:375px) {
+    #English {
+        display: none;
+    }
+
+    #button1 {
+        border: none;
+    }
+}
+
+@media (max-width:300px) {
+    #button1 {
+        display: none;
+    }
+}
+
+@media (max-width:250px) {
+    #button2 {
+        display: none;
+    }
+    .navbar {
+        flex-direction: column;
+        align-self: center;
+    }
+}
+
+
+/** SECOND VIEWPORT **/
+
+
+.secondviewport {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1px;
+    background-color: black;
+}
+
+.innerbox {
+    height: 60vh;
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.context {
+    height: 100%;
+    width: 40vw;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.context h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.context p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.contentimg {
+    height: 100%;
+    width: 40vw;
+}
+
+.contentimg img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:950px) {
+    .innerbox {
+        height: 80vh;
+        width: 90vw;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .context {
+        width: 100%;
+        height: 40vh;
+    }
+    .context h1 {
+        text-align: center;
+        /* font-size: 10vw; */
+        font-size: 7vw;
+    }
+    
+    .context p {
+        text-align: center;
+        /* font-size: 1.5rem; */
+        font-size: 4vw;
+    }
+
+    .contentimg {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/** tHIRD VIEWPORT **/
+
+.thirdviewport {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.innerbox2 {
+    height: 60vh;
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.contentimg2 {
+    height: 100%;
+    width: 40vw;
+    /* padding: 0.8rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentimg2 img {
+    height: 100%;
+    width: 100%;
+}
+
+.context2 {
+    height: 100%;
+    width: 40vw;
+    overflow: hidden;
+    padding: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.context2 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.context2 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+@media (max-width:950px) {
+    .innerbox2 {
+        height: 80vh;
+        width: 90vw;
+        align-items: center;
+        flex-direction:  column-reverse;
+        margin-right: 0;
+    }
+    .context2 {
+        width: 100%;
+        height: 40vh;
+    }
+    .context2 h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    
+    .context2 p {
+        text-align: center;
+        font-size: 4vw;
+    }
+
+    .contentimg2 {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2rem;
+    }
+}
+
+
+/** FOURTH VIEWPORT **/
+
+.fourthviewport {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 1px;
+}
+
+.innerbox3 {
+    height: 60vh;
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.context3 {
+    height: 100%;
+    width: 40vw;
+    overflow: hidden;
+    padding: 0.6rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.context3 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.context3 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+.contentimg3 {
+    height: 100%;
+    width: 40vw;
+    /* padding: 0.8rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentimg3 img {
+    height: 100%;
+    width: 100%;
+}
+
+@media (max-width:950px) {
+    .innerbox3 {
+        height: 80vh;
+        width: 90vw;
+        align-items: center;
+        flex-direction:  column;
+        margin-right: 0;
+    }
+    .context3 {
+        width: 100%;
+        height: 40vh;
+    }
+    .context3 h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    
+    .context3 p {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .contentimg3 {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2rem;
+    }
+}
+
+/** FIFTH VIERPORT **/
+
+.fifthviewport {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 1px;
+}
+
+.innerbox4 {
+    height: 60vh;
+    width: 86vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4rem;
+}
+
+.contentimg4 {
+    height: 100%;
+    width: 40vw;
+}
+
+.contentimg4 img {
+    height: 100%;
+    width: 100%;
+}
+
+.context4 {
+    height: 100%;
+    width: 40vw;
+    overflow: hidden;
+    padding: 0.6rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.context4 h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.context4 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding-top: 1rem;
+}
+
+@media (max-width:950px) {
+    .innerbox4 {
+        height: 80vh;
+        width: 90vw;
+        align-items: center;
+        flex-direction:  column-reverse;
+        margin-right: 0;
+    }
+    .context4 {
+        width: 100%;
+        height: 40vh;
+    }
+    .context4 h1 {
+        text-align: center;
+        font-size: 7vw;
+    }
+    
+    .context4 p {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    .contentimg4 {
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 2rem;
+    }
+}
+
+/** SIXTH VIEWPORT **/
+
+.sixthviewport {
+    height: 190vh;
+    width: 100vw;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+}
+
+.innerbox5 {
+    height: 120vh;
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+.heading h2 {
+    padding-bottom: 1rem;
+    font-size: 3.6rem;
+    text-align: center;
+}
+
+.button {
+    height: 86%;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;     
+    width: 100%;
+    height: 18vh;
+    padding: 20px;             
+    font-size: 1.5rem;     
+    background-color: #333;
+    color: white;     
+    border: none;          
+    cursor: pointer;
+    transition: all 0.3s linear 0s;
+    margin-top: 2px;
+                  
+}
+
+.buttons:hover {
+    background-color: #444;
+    transform: scale(1.04);          
+}
+
+.buttons i {
+    font-size: 3rem;
+}
+
+.searchpannel {
+    height: 90vh;
+    width: 80vw;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contextlast h3 {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+@media (max-width:950px) {
+    .heading h2 {
+        font-size: 8vw;
+    }
+    .buttons {
+        font-size: 8vw;
+    }
+
+
+}
+/* SEVENTH VIEWPORT */
+
+
+.seventhviewport {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    margin-top: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.innerbox6 {
+    height: 70vh;
+    width: 93vw;
+    /* margin-right: 1rem; */
+}
+
+.no p {
+    font-size: 1.2rem;
+    color: #d9cdcdc7;
+}
+
+.linksdata {
+    height: 65%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.butt {
+    height: 2.3rem;
+    width: 8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    margin-top: 0.6rem;
+    border: 0.8px solid rgba(255, 255, 255, 0.284);
+    background-color: transparent;
+    color: #d9cdcdda;
+}
+
+.butt i {
+    margin-right: 0.4rem;
+}
+
+.firstlist {
+    height: 100%;
+    width: 18%;
+}
+
+#firstlist {
+    list-style-type: none;
+}
+
+#firstlist li {
+    margin-top: 1.8rem;
+    font-size: 1.2rem;
+    color: #d9cdcdc7;
+}
+
+.Netflix-India p {
+    color: #d9cdcdc7;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;  
+}
+
+@media (max-width:320px) {
+    .linksdata {
+        justify-content: space-around;
+    }
+    .secondlist {
+        display: none;
+    }
+    .thirdlist {
+        display: none;
+    }
+
+}
+
+@media (min-width:321px) and (max-width:500px){
+    .linksdata {
+        justify-content: space-between;
+    }
+    .thirdlist {
+        display: none;
+    }
+    #firstlist li {
+        margin-top: 1.8rem;
+        font-size: 1rem;
+        color: #d9cdcdc7;
+    }
+}

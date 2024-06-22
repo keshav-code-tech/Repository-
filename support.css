@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100vw;
+  background: linear-gradient(#121212,#176633);
+}
+.navbar {
+  height: 17vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+}
+.innernav {
+  height: 15vh;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+.navlogo {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  height: 65%;
+  width: 18%;
+}
+
+.img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: cover;
+  animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.navlogo h1 {
+  font-weight: 600;
+  font-size: 3vw;
+  margin-left: 0.4rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+.navlogo h1:hover {
+  text-shadow: 0 0 5px #808080, 0 0 10px #808080, 0 0 15px #808080,
+    0 0 20px #808080;
+}
+
+.navoptions {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: red;
+}
+#icon1 {
+    font-size: 1.5vw;
+    transition: all 0.2s ease-in 0s;
+}
+#icon1:hover {
+    transform: scale(1.1);
+}
+#button4 {
+    height: 50%;
+    width: 35%;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out 0s;
+}
+#button4:hover {
+    transform: scale(1.1);
+}
+#button5 {
+    height: 45%;
+    width: 30%;
+    border-radius: 25px;
+    background-color: #0a183d;
+    transition: all 0.2s ease-in 0s;
+}
+#button5:hover {
+    transform: scale(1.1);
+    border: 1px solid white;
+}
+#button5 i {
+    margin-right: 0.4vw;
+}
+#icon2 {
+    font-size: 2.2vw;
+}
